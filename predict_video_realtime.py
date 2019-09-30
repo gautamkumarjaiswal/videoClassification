@@ -15,8 +15,8 @@ import time
 import pickle
 import cv2
 from twilio.rest import Client
-camid = 101
-location = 'Jerman Club, Sector 2, Rourkela, INDIA'
+#camid = 101   #upadte as per your requirements
+#location = 'Jerman Club, Sector 2, Rourkela, INDIA' 
 
 # construct the argument parser and parse the arguments
 ap = argparse.ArgumentParser()
@@ -52,7 +52,7 @@ writer = None
 time.sleep(2.0)
 #-------------------
 (W, H) = (None, None)
-client = Client("ACea4cecca40ebb1bf4594098d5cef3a74", "32789639585561088d5937514694e17d")
+#client = Client("ACea4cecca40ebb1bf4594098d5cef3XXX", "32789639585561088d5937514694eXXX") # copy from twilio
 prelabel = ''
 prelabel = ''
 ok = 'Normal'
@@ -114,10 +114,10 @@ while True:
 		fi_label = np.append(fi_label, label)
 		text = "Alert : {} - {:.2f}%".format((label), maxprob * 100)
 		cv2.putText(output, text, (35, 50), cv2.FONT_HERSHEY_SIMPLEX, 1.25, (0, 255, 0), 5) 
-		if label != prelabel:
-			client.messages.create(to="+918292556170", 
-                       from_="+18084008423", 
-                       body='\n'+ str(text) +'\n Satellite: ' + str(camid) + '\n Orbit: ' + location)
+#		if label != prelabel: #update to get alert on your mobile number
+#			client.messages.create(to="countrycode and mobile number", #for example +918XXXXXXXXX
+#                       from_="Sender number from twilio", #example +1808400XXXX
+#                       body='\n'+ str(text) +'\n Satellite: ' + str(camid) + '\n Orbit: ' + location)
 		prelabel = label
 
 
