@@ -22,7 +22,7 @@ Number of classes: 4
 3) Flood: 1073 images
 4) Wildfire: 1077 images
 
-Another application of same proejct to detect Robbery, Accident and Fire is at
+Another application of same project to detect Robbery, Accident and Fire is at
 https://drive.google.com/file/d/11KBgD_W2yOxhJnUMiyBkBzXDPXhVmvCt/view?usp=sharing
 
 Database size: 987MB
