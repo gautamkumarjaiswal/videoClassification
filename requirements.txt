@@ -52,7 +52,7 @@ prometheus-client==0.7.1
 prompt-toolkit==2.0.9
 protobuf==3.9.0
 Pygments==2.4.2
-PyJWT==1.7.1
+PyJWT==2.4.0
 pyparsing==2.4.1
 pyrsistent==0.15.3
 PySocks==1.7.0
